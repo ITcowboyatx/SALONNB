@@ -219,10 +219,10 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-8 left-4 max-w-[230px] rounded-lg bg-white p-5 text-neutral-950 shadow-2xl sm:left-8">
                   <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#c91522]">
-                    {sectionCopy.hero.bookingCardEyebrow}
+                    {sectionCopy.hero.appointmentCardEyebrow}
                   </p>
                   <p className="mt-2 font-display text-2xl leading-tight">
-                    {sectionCopy.hero.bookingCardBody}
+                    {sectionCopy.hero.appointmentCardBody}
                   </p>
                 </div>
               </div>

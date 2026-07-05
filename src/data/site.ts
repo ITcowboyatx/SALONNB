@@ -110,9 +110,9 @@ export const sectionCopy = {
     eyebrow: "New Braunfels Hair Salon",
     body: "Right off I-35 in New Braunfels, Salon NB brings polished color, extensions, cuts, and event styling together with the kind of welcome that makes a chair feel familiar.",
     secondaryCta: "View Services",
-    bookingCardEyebrow: "Appointments",
-    bookingCardBody:
-      "Online booking is coming soon. For now, reach out to plan color, cuts, extensions, bridal, and event styling.",
+    appointmentCardEyebrow: "Appointments",
+    appointmentCardBody:
+      "Call or message the salon to plan color, cuts, extensions, bridal, and event styling.",
   },
   services: {
     eyebrow: "Services",
@@ -151,7 +151,7 @@ export const sectionCopy = {
     eyebrow: "Contact",
     title: "Ready to plan your next appointment?",
     body:
-      "Find Salon NB at {address}. Online booking is coming soon; for now, call, message, get directions, or connect with the salon before your next color, cut, extension, or bridal appointment.",
+      "Find Salon NB at {address}. Call, message, get directions, or connect with the salon before your next color, cut, extension, or bridal appointment.",
     cardTitle: "Visit Salon NB",
     mapEyebrow: "New Braunfels",
   },
