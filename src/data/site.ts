@@ -16,7 +16,6 @@ export const business = {
   phoneHref: "tel:+18300000000",
   instagramLabel: "@salonnb",
   instagramUrl: "https://instagram.com/salonnb",
-  bookingUrl: "https://booking.example.com/salon-nb",
   email: "hello@salonnewbraunfels.com",
   hours: [
     "Monday: Hours coming soon",
@@ -111,15 +110,15 @@ export const sectionCopy = {
     eyebrow: "New Braunfels Hair Salon",
     body: "Right off I-35 in New Braunfels, Salon NB brings polished color, extensions, cuts, and event styling together with the kind of welcome that makes a chair feel familiar.",
     secondaryCta: "View Services",
-    bookingCardEyebrow: "Now Booking",
+    bookingCardEyebrow: "Appointments",
     bookingCardBody:
-      "Color, cuts, extensions, bridal, and event styling for New Braunfels plans.",
+      "Online booking is coming soon. For now, reach out to plan color, cuts, extensions, bridal, and event styling.",
   },
   services: {
     eyebrow: "Services",
     title: "Hair that fits your day, your calendar, and your vibe.",
-    body: "Book a New Braunfels hair salon appointment for color, extensions, highlights, smoothing, haircuts, makeup, and bridal styling with a polished but comfortable feel.",
-    cta: "Reserve Your Chair",
+    body: "Contact Salon NB about New Braunfels hair salon appointments for color, extensions, highlights, smoothing, haircuts, makeup, and bridal styling with a polished but comfortable feel.",
+    cta: "Contact to Schedule",
   },
   gallery: {
     eyebrow: "Gallery",
@@ -150,9 +149,9 @@ export const sectionCopy = {
   },
   contact: {
     eyebrow: "Contact",
-    title: "Ready for your next appointment?",
+    title: "Ready to plan your next appointment?",
     body:
-      "Find Salon NB at {address}. Book online, get directions, or connect with the salon before your next color, cut, extension, or bridal appointment.",
+      "Find Salon NB at {address}. Online booking is coming soon; for now, call, message, get directions, or connect with the salon before your next color, cut, extension, or bridal appointment.",
     cardTitle: "Visit Salon NB",
     mapEyebrow: "New Braunfels",
   },

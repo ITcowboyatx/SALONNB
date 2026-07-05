@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Salon NB",
   },
   description:
-    "Book Salon NB, a warm modern hair salon in New Braunfels for extensions, highlights, full color, haircuts, bridal hair, wedding makeup, and shampoo styles.",
+    "Contact Salon NB, a warm modern hair salon in New Braunfels for extensions, highlights, full color, haircuts, bridal hair, wedding makeup, and shampoo styles.",
   keywords: seoKeywords,
   alternates: {
     canonical: "/",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Salon NB | Hair Salon in New Braunfels, TX",
     description:
-      "Good Folks, Good Vibes, the Best Hair. Book a locally rooted New Braunfels salon for color, extensions, highlights, bridal hair, makeup, and haircuts.",
+      "Good Folks, Good Vibes, the Best Hair. Contact a locally rooted New Braunfels salon for color, extensions, highlights, bridal hair, makeup, and haircuts.",
     url: business.domain,
     siteName: business.name,
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Salon NB | Hair Salon in New Braunfels, TX",
     description:
-      "Book Salon NB for extensions, highlights, color, cuts, bridal hair, and makeup in New Braunfels.",
+      "Contact Salon NB for extensions, highlights, color, cuts, bridal hair, and makeup in New Braunfels.",
     images: ["/images/salon-nb-building.png"],
   },
   icons: {

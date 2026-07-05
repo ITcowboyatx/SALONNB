@@ -44,8 +44,8 @@ const localBusinessJsonLd = {
   })),
 };
 
-function BookingButton({
-  children = "Book Appointment",
+function AppointmentButton({
+  children = "Contact to Schedule",
   variant = "primary",
 }: {
   children?: React.ReactNode;
@@ -62,9 +62,7 @@ function BookingButton({
 
   return (
     <a
-      href={business.bookingUrl}
-      target="_blank"
-      rel="noreferrer"
+      href="#contact"
       className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-bold uppercase tracking-[0.16em] transition ${styles[variant]}`}
     >
       {children}
@@ -147,7 +145,7 @@ export default function Home() {
                 </a>
               ))}
             </nav>
-            <BookingButton>Book</BookingButton>
+            <AppointmentButton>Contact</AppointmentButton>
           </div>
           <nav
             aria-label="Mobile navigation"
@@ -189,7 +187,7 @@ export default function Home() {
                   {sectionCopy.hero.body}
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                  <BookingButton variant="light" />
+                  <AppointmentButton variant="light" />
                   <a
                     href="#services"
                     className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/30 px-6 text-sm font-bold uppercase tracking-[0.16em] text-white transition hover:border-[#f6c744] hover:text-[#f6c744]"
@@ -258,7 +256,7 @@ export default function Home() {
               </div>
 
               <div className="mt-10 flex justify-center">
-                <BookingButton>{sectionCopy.services.cta}</BookingButton>
+                <AppointmentButton>{sectionCopy.services.cta}</AppointmentButton>
               </div>
             </div>
           </section>
@@ -341,9 +339,9 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="mt-8">
-                  <BookingButton variant="light">
+                  <AppointmentButton variant="light">
                     {sectionCopy.bridal.cta}
-                  </BookingButton>
+                  </AppointmentButton>
                 </div>
               </div>
             </div>
@@ -457,7 +455,7 @@ export default function Home() {
                     </a>
                   </div>
                   <div className="mt-8">
-                    <BookingButton>Book Appointment</BookingButton>
+                    <AppointmentButton>Contact to Schedule</AppointmentButton>
                   </div>
                 </div>
 
@@ -519,13 +517,8 @@ export default function Home() {
               >
                 Instagram
               </a>
-              <a
-                href={business.bookingUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-[#f6c744]"
-              >
-                Booking
+              <a href="#contact" className="hover:text-[#f6c744]">
+                Appointments
               </a>
             </div>
           </div>
