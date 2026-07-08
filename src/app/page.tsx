@@ -9,6 +9,7 @@ import {
 } from "@/data/site";
 
 const addressLine = `${business.address.street}, ${business.address.unit}, ${business.address.city}, ${business.address.state} ${business.address.postalCode}`;
+const encodedAddress = encodeURIComponent(addressLine);
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
@@ -485,9 +486,7 @@ export default function Home() {
                       {business.facebookLabel}
                     </a>
                     <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                        addressLine,
-                      )}`}
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
                       target="_blank"
                       rel="noreferrer"
                       className="block py-4 transition hover:text-[#c91522]"
@@ -512,10 +511,14 @@ export default function Home() {
 
                   <div className="min-h-[330px] overflow-hidden rounded-lg bg-white text-neutral-950">
                     <div className="relative h-full min-h-[330px] bg-[#f7f3ef]">
-                      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.08)_1px,transparent_1px),linear-gradient(0deg,rgba(0,0,0,0.08)_1px,transparent_1px)] bg-[size:36px_36px]" />
-                      <div className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#c91522] shadow-2xl">
-                        <div className="absolute left-1/2 top-1/2 h-5 w-5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white" />
-                      </div>
+                      <iframe
+                        title="Google Map to Salon NB in New Braunfels"
+                        src={`https://www.google.com/maps?q=${encodedAddress}&output=embed`}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="absolute inset-0 h-full w-full border-0"
+                      />
+                      <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10" />
                       <div className="absolute bottom-5 left-5 right-5 rounded-lg bg-white p-5 shadow-xl">
                         <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#c91522]">
                           {sectionCopy.contact.mapEyebrow}
