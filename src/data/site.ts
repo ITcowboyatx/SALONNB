@@ -123,7 +123,7 @@ export const sectionCopy = {
   gallery: {
     eyebrow: "Gallery",
     title: "Real salon work and a room with personality.",
-    body: "Salon NB client hair photos and salon interior details featuring New Braunfels highlights, dimensional color, polished cuts, warm lighting, and a stylish local point of view.",
+    body: "Salon NB client hair photos, stylist energy, and salon interior details featuring New Braunfels highlights, dimensional color, polished cuts, warm lighting, and a stylish local point of view.",
   },
   bridal: {
     eyebrow: "Bridal / Weddings",
@@ -220,6 +220,11 @@ export const galleryImages = [
     src: "/images/salon-nb-interior-shampoo-room.jpg",
     alt: "Salon NB shampoo room with warm lighting and dark walls",
     label: "Shampoo room",
+  },
+  {
+    src: "/images/salon-nb-team-exterior.jpg",
+    alt: "Salon NB stylists outside the New Braunfels salon building",
+    label: "Salon NB team",
   },
 ];
 
