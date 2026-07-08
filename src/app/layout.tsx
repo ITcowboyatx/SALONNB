@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     siteName: business.name,
     images: [
       {
-        url: "/images/salon-nb-building.png",
-        alt: "Salon NB building exterior in New Braunfels",
+        url: "/images/salon-nb-team-exterior.jpg",
+        alt: "Salon NB team outside the New Braunfels salon building",
       },
     ],
     locale: "en_US",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Salon NB | Hair Salon in New Braunfels, TX",
     description:
       "Contact Salon NB for extensions, highlights, color, cuts, bridal hair, and makeup in New Braunfels.",
-    images: ["/images/salon-nb-building.png"],
+    images: ["/images/salon-nb-team-exterior.jpg"],
   },
   icons: {
     icon: "/images/salon-nb-logo.png",

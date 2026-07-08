@@ -14,8 +14,8 @@ export const business = {
   },
   phone: "(830) 000-0000",
   phoneHref: "tel:+18300000000",
-  instagramLabel: "@salonnb",
-  instagramUrl: "https://instagram.com/salonnb",
+  facebookLabel: "Facebook",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61589620811520",
   email: "hello@salonnewbraunfels.com",
   hours: [
     "Monday: Hours coming soon",
@@ -122,8 +122,8 @@ export const sectionCopy = {
   },
   gallery: {
     eyebrow: "Gallery",
-    title: "Real salon work with a local point of view.",
-    body: "Salon NB client hair photos featuring New Braunfels highlights, dimensional color, polished cuts, and soft finished styles.",
+    title: "Real salon work and a room with personality.",
+    body: "Salon NB client hair photos and salon interior details featuring New Braunfels highlights, dimensional color, polished cuts, warm lighting, and a stylish local point of view.",
   },
   bridal: {
     eyebrow: "Bridal / Weddings",
@@ -161,20 +161,32 @@ export const sectionCopy = {
 
 export const imageAssets = {
   heroBuilding: {
-    src: "/images/salon-nb-building.png",
-    alt: "Salon NB building exterior in New Braunfels with coming soon signage",
+    src: "/images/salon-nb-team-exterior.jpg",
+    alt: "Salon NB team outside the New Braunfels salon building",
   },
   salonDetail: {
-    src: "/images/salon-nb-blonde-highlights.png",
-    alt: "Blonde highlights styled in soft waves inside Salon NB",
+    src: "/images/salon-nb-interior-pink-chairs.jpg",
+    alt: "Stylish Salon NB waiting area with pink velvet chairs and warm natural light",
   },
   bridal: {
     src: "/images/salon-nb-hands-bridal-updo.png",
     alt: "Temporary bridal hair image showing feminine hands pinning a blonde updo",
   },
   about: {
-    src: "/images/salon-nb-hands-cutting-hair.png",
-    alt: "Temporary About Salon NB image showing feminine hands cutting blonde hair",
+    src: "/images/salon-nb-interior-lounge.jpg",
+    alt: "Warm Salon NB lounge with art, plants, black fireplace, and blue velvet chair",
+  },
+  interiorPinkChairs: {
+    src: "/images/salon-nb-interior-pink-chairs.jpg",
+    alt: "Salon NB lounge corner with pink chairs, plants, and framed wall art",
+  },
+  interiorLounge: {
+    src: "/images/salon-nb-interior-lounge.jpg",
+    alt: "Salon NB lounge with black fireplace, warm lighting, plants, and vintage art",
+  },
+  interiorShampooRoom: {
+    src: "/images/salon-nb-interior-shampoo-room.jpg",
+    alt: "Salon NB shampoo room with leather shampoo chairs, dark walls, and warm lights",
   },
 };
 
@@ -193,6 +205,21 @@ export const galleryImages = [
     src: "/images/salon-nb-dimensional-waves.png",
     alt: "Dimensional blonde waves with a warm salon finish at Salon NB",
     label: "Dimensional color",
+  },
+  {
+    src: "/images/salon-nb-interior-pink-chairs.jpg",
+    alt: "Salon NB pink lounge chairs and warm interior styling",
+    label: "Salon vibe",
+  },
+  {
+    src: "/images/salon-nb-interior-lounge.jpg",
+    alt: "Salon NB lounge with plants, art, and moody warm lighting",
+    label: "Local style",
+  },
+  {
+    src: "/images/salon-nb-interior-shampoo-room.jpg",
+    alt: "Salon NB shampoo room with warm lighting and dark walls",
+    label: "Shampoo room",
   },
 ];
 
