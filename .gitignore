@@ -24,6 +24,9 @@
 # misc
 .DS_Store
 *.pem
+Social Media Pages.txt
+Dana.html
+*_files/
 
 # debug
 npm-debug.log*

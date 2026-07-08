@@ -171,20 +171,32 @@ export const stylists = [
   {
     name: "Dana",
     role: "Salon NB stylist",
-    socialLabel: "View Dana's Facebook",
-    socialUrl: "https://www.facebook.com/Dana.Duncan05",
+    socialLabel: "View Dana's Instagram",
+    socialUrl: "https://www.instagram.com/dana_derryberry/",
+    image: {
+      src: "/images/stylist-dana.png",
+      alt: "Dana, Salon NB stylist",
+    },
   },
   {
     name: "Amanda",
     role: "Salon NB stylist",
     socialLabel: "View Amanda's Facebook",
     socialUrl: "https://www.facebook.com/amanda.marie.morgan.2025",
+    image: {
+      src: "/images/stylist-amanda.png",
+      alt: "Amanda, Salon NB stylist",
+    },
   },
   {
     name: "Rylie",
     role: "Salon NB stylist",
     socialLabel: "View Rylie's Instagram",
     socialUrl: "https://www.instagram.com/rylierootandramble/",
+    image: {
+      src: "/images/stylist-rylie.png",
+      alt: "Rylie, Salon NB stylist",
+    },
   },
 ];
 

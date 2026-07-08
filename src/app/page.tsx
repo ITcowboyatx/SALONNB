@@ -333,14 +333,31 @@ export default function Home() {
                       key={stylist.name}
                       className="rounded-lg border border-neutral-200 bg-white p-5 shadow-sm"
                     >
-                      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                        <div>
-                          <h3 className="font-display text-3xl text-neutral-950">
-                            {stylist.name}
-                          </h3>
-                          <p className="mt-1 text-sm font-bold uppercase tracking-[0.16em] text-neutral-500">
-                            {stylist.role}
-                          </p>
+                      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+                        <div className="flex items-center gap-4">
+                          <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-lg bg-neutral-950">
+                            {stylist.image ? (
+                              <Image
+                                src={stylist.image.src}
+                                alt={stylist.image.alt}
+                                fill
+                                sizes="96px"
+                                className="object-cover"
+                              />
+                            ) : (
+                              <div className="flex h-full w-full items-center justify-center bg-neutral-950 font-display text-4xl text-[#f6c744]">
+                                {stylist.name.charAt(0)}
+                              </div>
+                            )}
+                          </div>
+                          <div>
+                            <h3 className="font-display text-3xl text-neutral-950">
+                              {stylist.name}
+                            </h3>
+                            <p className="mt-1 text-sm font-bold uppercase tracking-[0.16em] text-neutral-500">
+                              {stylist.role}
+                            </p>
+                          </div>
                         </div>
                         <a
                           href={stylist.socialUrl}
