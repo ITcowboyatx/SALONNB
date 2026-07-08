@@ -180,8 +180,8 @@ export const stylists = [
   {
     name: "Amanda",
     role: "Salon NB stylist",
-    socialLabel: "View Amanda's Facebook",
-    socialUrl: "https://www.facebook.com/amanda.marie.morgan.2025",
+    socialLabel: "View Amanda's Instagram",
+    socialUrl: "https://www.instagram.com/amanduh_doeshair_tx/",
     image: {
       src: "/images/stylist-amanda.png",
       alt: "Amanda, Salon NB stylist",
