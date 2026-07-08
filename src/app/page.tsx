@@ -65,7 +65,7 @@ function AppointmentButton({
 
   return (
     <a
-      href="#contact"
+      href="#stylists"
       className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-bold uppercase tracking-[0.16em] transition ${styles[variant]}`}
     >
       {children}
@@ -641,7 +641,7 @@ export default function Home() {
               >
                 Facebook
               </a>
-              <a href="#contact" className="hover:text-[#f6c744]">
+              <a href="#stylists" className="hover:text-[#f6c744]">
                 Appointments
               </a>
             </div>
