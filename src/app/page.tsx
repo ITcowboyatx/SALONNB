@@ -6,6 +6,7 @@ import {
   navItems,
   sectionCopy,
   services,
+  stylists,
 } from "@/data/site";
 
 const addressLine = `${business.address.street}, ${business.address.unit}, ${business.address.city}, ${business.address.state} ${business.address.postalCode}`;
@@ -35,7 +36,7 @@ const localBusinessJsonLd = {
     "Canyon Lake",
     "Seguin",
   ],
-  sameAs: [business.facebookUrl],
+  sameAs: [business.facebookUrl, ...stylists.map((stylist) => stylist.socialUrl)],
   makesOffer: services.map((service) => ({
     "@type": "Offer",
     itemOffered: {
@@ -305,6 +306,66 @@ export default function Home() {
                   </AppointmentButton>
                 </div>
               </div>
+            </div>
+          </section>
+
+          <section
+            id="stylists"
+            className="bg-white px-4 py-20 sm:px-6 lg:px-8"
+          >
+            <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#c91522]">
+                  {sectionCopy.stylists.eyebrow}
+                </p>
+                <h2 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
+                  {sectionCopy.stylists.title}
+                </h2>
+                <p className="mt-5 text-lg leading-8 text-neutral-600">
+                  {sectionCopy.stylists.body}
+                </p>
+                <p className="mt-4 text-sm font-bold uppercase tracking-[0.16em] text-neutral-500">
+                  {sectionCopy.stylists.note}
+                </p>
+                <div className="mt-8 grid gap-4">
+                  {stylists.map((stylist) => (
+                    <article
+                      key={stylist.name}
+                      className="rounded-lg border border-neutral-200 bg-white p-5 shadow-sm"
+                    >
+                      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                          <h3 className="font-display text-3xl text-neutral-950">
+                            {stylist.name}
+                          </h3>
+                          <p className="mt-1 text-sm font-bold uppercase tracking-[0.16em] text-neutral-500">
+                            {stylist.role}
+                          </p>
+                        </div>
+                        <a
+                          href={stylist.socialUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex min-h-11 items-center justify-center rounded-full border border-neutral-950 px-5 text-xs font-bold uppercase tracking-[0.16em] text-neutral-950 transition hover:border-[#c91522] hover:text-[#c91522]"
+                        >
+                          {stylist.socialLabel}
+                        </a>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+              <figure className="overflow-hidden rounded-lg bg-neutral-100 shadow-2xl">
+                <div className="relative aspect-[4/5] sm:aspect-[16/12] lg:aspect-[4/5]">
+                  <Image
+                    src={imageAssets.heroBuilding.src}
+                    alt={imageAssets.heroBuilding.alt}
+                    fill
+                    sizes="(min-width: 1024px) 42vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              </figure>
             </div>
           </section>
 

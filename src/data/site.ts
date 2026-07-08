@@ -18,19 +18,14 @@ export const business = {
   facebookUrl: "https://www.facebook.com/profile.php?id=61589620811520",
   email: "hello@salonnewbraunfels.com",
   hours: [
-    "Monday: Hours coming soon",
-    "Tuesday: Hours coming soon",
-    "Wednesday: Hours coming soon",
-    "Thursday: Hours coming soon",
-    "Friday: Hours coming soon",
-    "Saturday: Hours coming soon",
-    "Sunday: Hours coming soon",
+    "By appointment only",
   ],
 };
 
 export const navItems = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
+  { label: "Stylists", href: "#stylists" },
   { label: "Gallery", href: "#gallery" },
   { label: "Bridal", href: "#bridal" },
   { label: "About", href: "#about" },
@@ -127,6 +122,12 @@ export const sectionCopy = {
     cta: "Plan Your Visit",
     details: ["Warm Welcome", "Bold Style", "Good Vibes", "Best Hair"],
   },
+  stylists: {
+    eyebrow: "Stylists",
+    title: "Connect with your Salon NB stylist.",
+    body: "Each stylist manages her own appointment conversations. Use the links below to visit her current stylist page and reach out directly without publishing personal phone numbers on the site.",
+    note: "Individual headshots coming soon.",
+  },
   gallery: {
     eyebrow: "Gallery",
     title: "Real salon work and a room with personality.",
@@ -165,6 +166,27 @@ export const sectionCopy = {
   footer:
     "Hair salon New Braunfels, extensions, highlights, bridal hair, makeup, color, and cuts.",
 };
+
+export const stylists = [
+  {
+    name: "Dana",
+    role: "Salon NB stylist",
+    socialLabel: "View Dana's Facebook",
+    socialUrl: "https://www.facebook.com/Dana.Duncan05",
+  },
+  {
+    name: "Amanda",
+    role: "Salon NB stylist",
+    socialLabel: "View Amanda's Facebook",
+    socialUrl: "https://www.facebook.com/amanda.marie.morgan.2025",
+  },
+  {
+    name: "Rylie",
+    role: "Salon NB stylist",
+    socialLabel: "View Rylie's Instagram",
+    socialUrl: "https://www.instagram.com/rylierootandramble/",
+  },
+];
 
 export const imageAssets = {
   heroBuilding: {
