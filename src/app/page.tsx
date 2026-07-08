@@ -166,18 +166,8 @@ export default function Home() {
         </header>
 
         <main id="home">
-          <section className="relative overflow-hidden bg-neutral-950 text-white">
-            <Image
-              src={imageAssets.interiorShampooRoom.src}
-              alt=""
-              fill
-              priority
-              aria-hidden="true"
-              sizes="100vw"
-              className="object-cover opacity-35"
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,0.94)_0%,rgba(10,10,10,0.78)_48%,rgba(10,10,10,0.48)_100%)]" />
-            <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8 lg:py-20">
+          <section className="overflow-hidden bg-neutral-950 text-white">
+            <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8 lg:py-20">
               <div className="max-w-2xl">
                 <div className="inline-flex bg-white p-4">
                   <Image
@@ -209,7 +199,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative min-h-[520px]">
+              <div className="relative min-h-[420px] sm:min-h-[520px]">
                 <div className="absolute left-0 top-0 h-[74%] w-[82%] overflow-hidden rounded-lg border border-white/10">
                   <Image
                     src={imageAssets.heroBuilding.src}
@@ -243,18 +233,9 @@ export default function Home() {
 
           <section
             id="services"
-            className="relative overflow-hidden bg-white px-4 py-20 sm:px-6 lg:px-8"
+            className="bg-white px-4 py-20 sm:px-6 lg:px-8"
           >
-            <Image
-              src={imageAssets.interiorPinkChairs.src}
-              alt=""
-              fill
-              aria-hidden="true"
-              sizes="100vw"
-              className="object-cover opacity-[0.08]"
-            />
-            <div className="absolute inset-0 bg-white/90" />
-            <div className="relative mx-auto max-w-7xl">
+            <div className="mx-auto max-w-7xl">
               <SectionIntro
                 eyebrow={sectionCopy.services.eyebrow}
                 title={sectionCopy.services.title}
@@ -331,17 +312,8 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="bridal" className="relative overflow-hidden bg-neutral-950 text-white">
-            <Image
-              src={imageAssets.interiorLounge.src}
-              alt=""
-              fill
-              aria-hidden="true"
-              sizes="100vw"
-              className="object-cover opacity-25"
-            />
-            <div className="absolute inset-0 bg-neutral-950/85" />
-            <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
+          <section id="bridal" className="bg-neutral-950 text-white">
+            <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg sm:aspect-[16/12] lg:aspect-[4/5]">
                 <Image
                   src={imageAssets.bridal.src}
@@ -437,18 +409,9 @@ export default function Home() {
 
           <section
             id="contact"
-            className="relative overflow-hidden bg-[#c91522] px-4 py-20 text-white sm:px-6 lg:px-8"
+            className="bg-[#c91522] px-4 py-20 text-white sm:px-6 lg:px-8"
           >
-            <Image
-              src={imageAssets.interiorPinkChairs.src}
-              alt=""
-              fill
-              aria-hidden="true"
-              sizes="100vw"
-              className="object-cover opacity-30 mix-blend-multiply"
-            />
-            <div className="absolute inset-0 bg-[#c91522]/88" />
-            <div className="relative mx-auto max-w-7xl">
+            <div className="mx-auto max-w-7xl">
               <SectionIntro
                 eyebrow={sectionCopy.contact.eyebrow}
                 title={sectionCopy.contact.title}
