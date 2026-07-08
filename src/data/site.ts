@@ -120,6 +120,13 @@ export const sectionCopy = {
     body: "Contact Salon NB about New Braunfels hair salon appointments for color, extensions, highlights, smoothing, haircuts, makeup, and bridal styling with a polished but comfortable feel.",
     cta: "Contact to Schedule",
   },
+  vibe: {
+    eyebrow: "The Salon NB Mood",
+    title: "A little be-a-legend energy belongs in the chair.",
+    body: "That front-room corner says a lot about Salon NB: warm light, bold style, good plants, pink velvet, and a confident welcome that feels polished without being stiff.",
+    cta: "Plan Your Visit",
+    details: ["Warm", "Confident", "Stylish", "Welcoming"],
+  },
   gallery: {
     eyebrow: "Gallery",
     title: "Real salon work and a room with personality.",

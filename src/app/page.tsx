@@ -266,6 +266,48 @@ export default function Home() {
             </div>
           </section>
 
+          <section className="bg-neutral-950 px-4 py-20 text-white sm:px-6 lg:px-8">
+            <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+              <figure className="overflow-hidden rounded-lg bg-neutral-900 shadow-2xl">
+                <div className="relative aspect-[4/5] sm:aspect-[16/12] lg:aspect-[4/5]">
+                  <Image
+                    src={imageAssets.interiorPinkChairs.src}
+                    alt={imageAssets.interiorPinkChairs.alt}
+                    fill
+                    sizes="(min-width: 1024px) 52vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              </figure>
+              <div className="max-w-xl">
+                <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#f6c744]">
+                  {sectionCopy.vibe.eyebrow}
+                </p>
+                <h2 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
+                  {sectionCopy.vibe.title}
+                </h2>
+                <p className="mt-5 text-lg leading-8 text-white/75">
+                  {sectionCopy.vibe.body}
+                </p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {sectionCopy.vibe.details.map((detail) => (
+                    <span
+                      key={detail}
+                      className="border-b-2 border-[#f6c744] pb-2 text-sm font-bold uppercase tracking-[0.16em] text-white"
+                    >
+                      {detail}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-8">
+                  <AppointmentButton variant="light">
+                    {sectionCopy.vibe.cta}
+                  </AppointmentButton>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section
             id="gallery"
             className="bg-[#f7f3ef] px-4 py-20 sm:px-6 lg:px-8"
