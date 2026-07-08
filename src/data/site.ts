@@ -121,11 +121,11 @@ export const sectionCopy = {
     cta: "Contact to Schedule",
   },
   vibe: {
-    eyebrow: "The Salon NB Mood",
-    title: "A little be-a-legend energy belongs in the chair.",
-    body: "That front-room corner says a lot about Salon NB: warm light, bold style, good plants, pink velvet, and a confident welcome that feels polished without being stiff.",
+    eyebrow: "Good Vibes Live Here",
+    title: "Come in comfortable. Leave feeling like a legend.",
+    body: "That Stevie corner sets the tone: pink velvet, warm light, good plants, and a little rock-and-roll confidence. Salon NB is stylish without feeling precious, relaxed without feeling ordinary, and built for appointments that feel as good as the hair looks.",
     cta: "Plan Your Visit",
-    details: ["Warm", "Confident", "Stylish", "Welcoming"],
+    details: ["Warm Welcome", "Bold Style", "Good Vibes", "Best Hair"],
   },
   gallery: {
     eyebrow: "Gallery",
