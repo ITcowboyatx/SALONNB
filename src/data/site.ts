@@ -126,7 +126,6 @@ export const sectionCopy = {
     eyebrow: "Stylists",
     title: "Connect with your Salon NB stylist.",
     body: "Each stylist manages her own appointment conversations. Use the links below to visit her current stylist page and reach out directly without publishing personal phone numbers on the site.",
-    note: "Individual headshots coming soon.",
   },
   gallery: {
     eyebrow: "Gallery",

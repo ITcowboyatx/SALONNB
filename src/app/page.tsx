@@ -324,9 +324,6 @@ export default function Home() {
                 <p className="mt-5 text-lg leading-8 text-neutral-600">
                   {sectionCopy.stylists.body}
                 </p>
-                <p className="mt-4 text-sm font-bold uppercase tracking-[0.16em] text-neutral-500">
-                  {sectionCopy.stylists.note}
-                </p>
                 <div className="mt-8 grid gap-4">
                   {stylists.map((stylist) => (
                     <article
