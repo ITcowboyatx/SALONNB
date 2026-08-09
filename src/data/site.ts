@@ -129,7 +129,7 @@ export const sectionCopy = {
   },
   gallery: {
     eyebrow: "Gallery",
-    title: "Real salon work and a room with personality.",
+    title: "Real salon work, fresh color, and a room with personality.",
     body: "Salon NB client hair photos, stylist energy, and salon interior details featuring New Braunfels highlights, dimensional color, polished cuts, warm lighting, and a stylish local point of view.",
   },
   bridal: {
@@ -228,9 +228,60 @@ export const imageAssets = {
     src: "/images/salon-nb-interior-shampoo-room.jpg",
     alt: "Salon NB shampoo room with leather shampoo chairs, dark walls, and warm lights",
   },
+  teamGroup: {
+    src: "/images/salon-nb-team-exterior.jpg",
+    alt: "Salon NB stylists gathered outside the New Braunfels salon",
+  },
+  brandHairFeature: {
+    src: "/images/salon-nb-dimensional-color-before-after.jpg",
+    alt: "Salon NB dimensional color before and after hair transformation",
+  },
 };
 
+export const hairWorkImages = [
+  {
+    src: "/images/salon-nb-color-correction-before-after.jpg",
+    alt: "Salon NB blonde color correction before and after hair transformation",
+    label: "Color refresh",
+  },
+  {
+    src: "/images/salon-nb-dimensional-color-before-after.jpg",
+    alt: "Salon NB dimensional brunette color before and after hair transformation",
+    label: "Dimensional color",
+  },
+  {
+    src: "/images/salon-nb-blonde-sleek.png",
+    alt: "Sleek blonde haircut and soft face framing color at Salon NB",
+    label: "Fresh cut",
+  },
+  {
+    src: "/images/salon-nb-blonde-highlights.png",
+    alt: "Blonde highlights and loose waves styled at Salon NB",
+    label: "Highlights",
+  },
+  {
+    src: "/images/salon-nb-dimensional-waves.png",
+    alt: "Dimensional blonde waves with a warm salon finish at Salon NB",
+    label: "Soft waves",
+  },
+  {
+    src: "/images/salon-nb-hands-bridal-updo.png",
+    alt: "Salon NB bridal updo styling with blonde hair pinned into place",
+    label: "Bridal styling",
+  },
+];
+
 export const galleryImages = [
+  {
+    src: "/images/salon-nb-color-correction-before-after.jpg",
+    alt: "Salon NB blonde color correction before and after hair transformation",
+    label: "Color refresh",
+  },
+  {
+    src: "/images/salon-nb-dimensional-color-before-after.jpg",
+    alt: "Salon NB dimensional brunette color before and after hair transformation",
+    label: "Dimensional color",
+  },
   {
     src: "/images/salon-nb-blonde-sleek.png",
     alt: "Sleek blonde haircut and soft face framing color at Salon NB",

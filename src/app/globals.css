@@ -30,6 +30,59 @@ img {
   max-width: 100%;
 }
 
+.photo-rotator {
+  overflow: hidden;
+  padding-block: 0.25rem;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.photo-rotator__track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: photo-rotator-scroll 42s linear infinite;
+}
+
+.photo-rotator:hover .photo-rotator__track {
+  animation-play-state: paused;
+}
+
+@keyframes photo-rotator-scroll {
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-rotator {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .photo-rotator__track {
+    animation: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  .photo-rotator__track > * {
+    scroll-snap-align: start;
+  }
+}
+
 ::selection {
   background: #f6c744;
   color: #111111;

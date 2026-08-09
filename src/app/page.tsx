@@ -2,6 +2,7 @@ import Image from "next/image";
 import {
   business,
   galleryImages,
+  hairWorkImages,
   imageAssets,
   navItems,
   sectionCopy,
@@ -47,6 +48,8 @@ const localBusinessJsonLd = {
   })),
 };
 
+type HairWorkImage = (typeof hairWorkImages)[number];
+
 function AppointmentButton({
   children = "Contact to Schedule",
   variant = "primary",
@@ -70,6 +73,37 @@ function AppointmentButton({
     >
       {children}
     </a>
+  );
+}
+
+function RotatingHairGallery({ images }: { images: HairWorkImage[] }) {
+  const loopedImages = [...images, ...images];
+
+  return (
+    <div className="photo-rotator mt-12" aria-label="Salon NB hair work">
+      <div className="photo-rotator__track">
+        {loopedImages.map((image, index) => (
+          <figure
+            key={`${image.src}-${index}`}
+            aria-hidden={index >= images.length ? true : undefined}
+            className="group relative h-80 w-[74vw] max-w-[280px] shrink-0 overflow-hidden rounded-lg bg-neutral-950 shadow-xl sm:h-96 sm:w-72"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(min-width: 1024px) 288px, 74vw"
+              className="object-cover transition duration-500 group-hover:scale-105"
+            />
+            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent p-5">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white">
+                {image.label}
+              </span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -394,6 +428,8 @@ export default function Home() {
               >
                 {sectionCopy.gallery.body}
               </SectionIntro>
+
+              <RotatingHairGallery images={hairWorkImages} />
 
               <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {galleryImages.map((image, index) => (
