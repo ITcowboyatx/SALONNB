@@ -173,7 +173,7 @@ export const stylists = [
     socialLabel: "View Dana's Instagram",
     socialUrl: "https://www.instagram.com/dana_derryberry/",
     image: {
-      src: "/images/stylist-dana.png",
+      src: "/images/stylist-dana.jpg",
       alt: "Dana, Salon NB stylist",
     },
   },
@@ -183,7 +183,7 @@ export const stylists = [
     socialLabel: "View Amanda's Instagram",
     socialUrl: "https://www.instagram.com/amanduh_doeshair_tx/",
     image: {
-      src: "/images/stylist-amanda.png",
+      src: "/images/stylist-amanda.jpg",
       alt: "Amanda, Salon NB stylist",
     },
   },
@@ -193,7 +193,7 @@ export const stylists = [
     socialLabel: "View Rylie's Instagram",
     socialUrl: "https://www.instagram.com/rylierootandramble/",
     image: {
-      src: "/images/stylist-rylie.png",
+      src: "/images/stylist-rylie.jpg",
       alt: "Rylie, Salon NB stylist",
     },
   },
@@ -201,12 +201,12 @@ export const stylists = [
 
 export const imageAssets = {
   heroBuilding: {
-    src: "/images/salon-nb-team-exterior.jpg",
-    alt: "Salon NB team outside the New Braunfels salon building",
+    src: "/images/salon-nb-team-group.jpg",
+    alt: "Salon NB stylists seated together inside the New Braunfels salon",
   },
   salonDetail: {
-    src: "/images/salon-nb-interior-pink-chairs.jpg",
-    alt: "Stylish Salon NB waiting area with pink velvet chairs and warm natural light",
+    src: "/images/salon-nb-logo-hair-tools.jpg",
+    alt: "Salon NB logo with hair extensions, scissors, guard combs, and color swatches",
   },
   bridal: {
     src: "/images/salon-nb-hands-bridal-updo.png",
@@ -229,93 +229,148 @@ export const imageAssets = {
     alt: "Salon NB shampoo room with leather shampoo chairs, dark walls, and warm lights",
   },
   teamGroup: {
-    src: "/images/salon-nb-team-exterior.jpg",
-    alt: "Salon NB stylists gathered outside the New Braunfels salon",
+    src: "/images/salon-nb-team-group.jpg",
+    alt: "Salon NB stylists gathered inside the New Braunfels salon",
   },
   brandHairFeature: {
-    src: "/images/salon-nb-dimensional-color-before-after.jpg",
-    alt: "Salon NB dimensional color before and after hair transformation",
+    src: "/images/salon-nb-logo-hair-tools.jpg",
+    alt: "Salon NB logo arranged with hair extensions and stylist tools",
   },
 };
 
 export const hairWorkImages = [
   {
-    src: "/images/salon-nb-color-correction-before-after.jpg",
-    alt: "Salon NB blonde color correction before and after hair transformation",
+    src: "/images/salon-nb-hair-work-01.jpg",
+    alt: "Salon NB dimensional brunette waves styled from the back",
+    label: "Dimensional waves",
+  },
+  {
+    src: "/images/salon-nb-hair-work-02.jpg",
+    alt: "Salon NB long blonde highlights styled in soft waves",
+    label: "Blonde highlights",
+  },
+  {
+    src: "/images/salon-nb-hair-work-03.jpg",
+    alt: "Salon NB dimensional blonde bob with soft curled shape",
+    label: "Blonde dimension",
+  },
+  {
+    src: "/images/salon-nb-hair-work-04.jpg",
+    alt: "Salon NB blonde waves with polished salon finish",
+    label: "Polished waves",
+  },
+  {
+    src: "/images/salon-nb-hair-work-05.jpg",
+    alt: "Salon NB glossy brunette waves styled from the back",
+    label: "Glossy brunette",
+  },
+  {
+    src: "/images/salon-nb-hair-work-06.jpg",
+    alt: "Salon NB long blonde waves styled with soft movement",
+    label: "Long blonde waves",
+  },
+  {
+    src: "/images/salon-nb-hair-work-07.jpg",
+    alt: "Salon NB dimensional brunette color with a before detail inset",
     label: "Color refresh",
   },
   {
-    src: "/images/salon-nb-dimensional-color-before-after.jpg",
-    alt: "Salon NB dimensional brunette color before and after hair transformation",
-    label: "Dimensional color",
+    src: "/images/salon-nb-hair-work-08.jpg",
+    alt: "Salon NB sleek blonde highlights and blended color",
+    label: "Blonde blend",
   },
   {
-    src: "/images/salon-nb-blonde-sleek.png",
-    alt: "Sleek blonde haircut and soft face framing color at Salon NB",
-    label: "Fresh cut",
+    src: "/images/salon-nb-hair-work-09.jpg",
+    alt: "Salon NB copper brunette waves styled near the salon window",
+    label: "Copper brunette",
   },
   {
-    src: "/images/salon-nb-blonde-highlights.png",
-    alt: "Blonde highlights and loose waves styled at Salon NB",
-    label: "Highlights",
+    src: "/images/salon-nb-hair-work-10.jpg",
+    alt: "Salon NB shoulder length dimensional blonde waves",
+    label: "Soft dimension",
   },
   {
-    src: "/images/salon-nb-dimensional-waves.png",
-    alt: "Dimensional blonde waves with a warm salon finish at Salon NB",
-    label: "Soft waves",
+    src: "/images/salon-nb-hair-work-11.jpg",
+    alt: "Salon NB icy blonde curls with bright dimensional highlights",
+    label: "Bright blonde",
   },
   {
-    src: "/images/salon-nb-hands-bridal-updo.png",
-    alt: "Salon NB bridal updo styling with blonde hair pinned into place",
-    label: "Bridal styling",
+    src: "/images/salon-nb-hair-work-12.jpg",
+    alt: "Salon NB long dimensional waves with blonde ribbon highlights",
+    label: "Ribbon highlights",
   },
 ];
 
 export const galleryImages = [
   {
-    src: "/images/salon-nb-color-correction-before-after.jpg",
-    alt: "Salon NB blonde color correction before and after hair transformation",
+    src: "/images/salon-nb-team-group.jpg",
+    alt: "Salon NB stylists seated together inside the salon",
+    label: "Salon NB team",
+  },
+  {
+    src: "/images/salon-nb-hair-work-12.jpg",
+    alt: "Salon NB long dimensional waves with blonde ribbon highlights",
+    label: "Ribbon highlights",
+  },
+  {
+    src: "/images/salon-nb-logo-hair-tools.jpg",
+    alt: "Salon NB logo arranged with hair extensions and stylist tools",
+    label: "Salon NB detail",
+  },
+  {
+    src: "/images/salon-nb-hair-work-01.jpg",
+    alt: "Salon NB dimensional brunette waves styled from the back",
+    label: "Dimensional waves",
+  },
+  {
+    src: "/images/salon-nb-hair-work-06.jpg",
+    alt: "Salon NB long blonde waves styled with soft movement",
+    label: "Long blonde waves",
+  },
+  {
+    src: "/images/salon-nb-hair-work-02.jpg",
+    alt: "Salon NB long blonde highlights styled in soft waves",
+    label: "Blonde highlights",
+  },
+  {
+    src: "/images/salon-nb-hair-work-03.jpg",
+    alt: "Salon NB dimensional blonde bob with soft curled shape",
+    label: "Blonde dimension",
+  },
+  {
+    src: "/images/salon-nb-hair-work-04.jpg",
+    alt: "Salon NB blonde waves with polished salon finish",
+    label: "Polished waves",
+  },
+  {
+    src: "/images/salon-nb-hair-work-05.jpg",
+    alt: "Salon NB glossy brunette waves styled from the back",
+    label: "Glossy brunette",
+  },
+  {
+    src: "/images/salon-nb-hair-work-07.jpg",
+    alt: "Salon NB dimensional brunette color with a before detail inset",
     label: "Color refresh",
   },
   {
-    src: "/images/salon-nb-dimensional-color-before-after.jpg",
-    alt: "Salon NB dimensional brunette color before and after hair transformation",
-    label: "Dimensional color",
+    src: "/images/salon-nb-hair-work-08.jpg",
+    alt: "Salon NB sleek blonde highlights and blended color",
+    label: "Blonde blend",
   },
   {
-    src: "/images/salon-nb-blonde-sleek.png",
-    alt: "Sleek blonde haircut and soft face framing color at Salon NB",
-    label: "Fresh cut",
+    src: "/images/salon-nb-hair-work-09.jpg",
+    alt: "Salon NB copper brunette waves styled near the salon window",
+    label: "Copper brunette",
   },
   {
-    src: "/images/salon-nb-blonde-highlights.png",
-    alt: "Blonde highlights and loose waves styled at Salon NB",
-    label: "Highlights",
+    src: "/images/salon-nb-hair-work-10.jpg",
+    alt: "Salon NB shoulder length dimensional blonde waves",
+    label: "Soft dimension",
   },
   {
-    src: "/images/salon-nb-dimensional-waves.png",
-    alt: "Dimensional blonde waves with a warm salon finish at Salon NB",
-    label: "Dimensional color",
-  },
-  {
-    src: "/images/salon-nb-interior-pink-chairs.jpg",
-    alt: "Salon NB pink lounge chairs and warm interior styling",
-    label: "Salon vibe",
-  },
-  {
-    src: "/images/salon-nb-interior-lounge.jpg",
-    alt: "Salon NB lounge with plants, art, and moody warm lighting",
-    label: "Local style",
-  },
-  {
-    src: "/images/salon-nb-interior-shampoo-room.jpg",
-    alt: "Salon NB shampoo room with warm lighting and dark walls",
-    label: "Shampoo room",
-  },
-  {
-    src: "/images/salon-nb-team-exterior.jpg",
-    alt: "Salon NB stylists outside the New Braunfels salon building",
-    label: "Salon NB team",
+    src: "/images/salon-nb-hair-work-11.jpg",
+    alt: "Salon NB icy blonde curls with bright dimensional highlights",
+    label: "Bright blonde",
   },
 ];
 
