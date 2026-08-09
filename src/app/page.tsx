@@ -201,8 +201,19 @@ export default function Home() {
         </header>
 
         <main id="home">
-          <section className="overflow-hidden bg-neutral-950 text-white">
-            <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:px-8 lg:py-20">
+          <section className="relative isolate overflow-hidden bg-neutral-950 text-white">
+            <Image
+              src={imageAssets.heroBuilding.src}
+              alt={imageAssets.heroBuilding.alt}
+              fill
+              preload
+              sizes="100vw"
+              className="absolute inset-0 -z-20 object-cover object-center"
+            />
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/85 via-black/65 to-black/30" />
+            <div className="absolute inset-x-0 bottom-0 -z-10 h-1/2 bg-gradient-to-t from-black/70 to-transparent" />
+
+            <div className="mx-auto flex min-h-[620px] max-w-7xl items-center px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
               <div className="max-w-2xl">
                 <div className="inline-flex bg-white p-4">
                   <Image
@@ -231,36 +242,6 @@ export default function Home() {
                   >
                     {sectionCopy.hero.secondaryCta}
                   </a>
-                </div>
-              </div>
-
-              <div className="relative min-h-[420px] sm:min-h-[520px]">
-                <div className="absolute left-0 top-0 h-[74%] w-[82%] overflow-hidden rounded-lg border border-white/10">
-                  <Image
-                    src={imageAssets.heroBuilding.src}
-                    alt={imageAssets.heroBuilding.alt}
-                    fill
-                    priority
-                    sizes="(min-width: 1024px) 48vw, 82vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="absolute bottom-0 right-0 h-[47%] w-[56%] overflow-hidden rounded-lg border-8 border-neutral-950 bg-neutral-900">
-                  <Image
-                    src={imageAssets.salonDetail.src}
-                    alt={imageAssets.salonDetail.alt}
-                    fill
-                    sizes="(min-width: 1024px) 26vw, 56vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="absolute bottom-8 left-4 max-w-[230px] rounded-lg bg-white p-5 text-neutral-950 shadow-2xl sm:left-8">
-                  <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#c91522]">
-                    {sectionCopy.hero.appointmentCardEyebrow}
-                  </p>
-                  <p className="mt-2 font-display text-2xl leading-tight">
-                    {sectionCopy.hero.appointmentCardBody}
-                  </p>
                 </div>
               </div>
             </div>
@@ -406,8 +387,8 @@ export default function Home() {
               <figure className="overflow-hidden rounded-lg bg-neutral-100 shadow-2xl">
                 <div className="relative aspect-[4/5] sm:aspect-[16/12] lg:aspect-[4/5]">
                   <Image
-                    src={imageAssets.heroBuilding.src}
-                    alt={imageAssets.heroBuilding.alt}
+                    src={imageAssets.teamGroup.src}
+                    alt={imageAssets.teamGroup.alt}
                     fill
                     sizes="(min-width: 1024px) 42vw, 100vw"
                     className="object-cover"

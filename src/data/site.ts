@@ -129,8 +129,8 @@ export const sectionCopy = {
   },
   gallery: {
     eyebrow: "Gallery",
-    title: "Real salon work, fresh color, and a room with personality.",
-    body: "Salon NB client hair photos, stylist energy, and salon interior details featuring New Braunfels highlights, dimensional color, polished cuts, warm lighting, and a stylish local point of view.",
+    title: "Real salon work and fresh color.",
+    body: "Salon NB client hair photos featuring New Braunfels highlights, dimensional color, polished cuts, soft waves, and glossy salon finishes.",
   },
   bridal: {
     eyebrow: "Bridal / Weddings",
@@ -201,8 +201,8 @@ export const stylists = [
 
 export const imageAssets = {
   heroBuilding: {
-    src: "/images/salon-nb-team-group.jpg",
-    alt: "Salon NB stylists seated together inside the New Braunfels salon",
+    src: "/images/salon-nb-team-exterior.jpg",
+    alt: "White Salon NB building exterior in New Braunfels with the porch and front entrance",
   },
   salonDetail: {
     src: "/images/salon-nb-logo-hair-tools.jpg",
@@ -303,21 +303,6 @@ export const hairWorkImages = [
 
 export const galleryImages = [
   {
-    src: "/images/salon-nb-team-group.jpg",
-    alt: "Salon NB stylists seated together inside the salon",
-    label: "Salon NB team",
-  },
-  {
-    src: "/images/salon-nb-hair-work-12.jpg",
-    alt: "Salon NB long dimensional waves with blonde ribbon highlights",
-    label: "Ribbon highlights",
-  },
-  {
-    src: "/images/salon-nb-logo-hair-tools.jpg",
-    alt: "Salon NB logo arranged with hair extensions and stylist tools",
-    label: "Salon NB detail",
-  },
-  {
     src: "/images/salon-nb-hair-work-01.jpg",
     alt: "Salon NB dimensional brunette waves styled from the back",
     label: "Dimensional waves",
@@ -371,6 +356,11 @@ export const galleryImages = [
     src: "/images/salon-nb-hair-work-11.jpg",
     alt: "Salon NB icy blonde curls with bright dimensional highlights",
     label: "Bright blonde",
+  },
+  {
+    src: "/images/salon-nb-hair-work-12.jpg",
+    alt: "Salon NB long dimensional waves with blonde ribbon highlights",
+    label: "Ribbon highlights",
   },
 ];
 
