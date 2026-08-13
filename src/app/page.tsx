@@ -9,6 +9,7 @@ import {
   services,
   stylists,
 } from "@/data/site";
+import { MobileSectionNav } from "@/components/mobile-section-nav";
 
 const addressLine = `${business.address.street}, ${business.address.unit}, ${business.address.city}, ${business.address.state} ${business.address.postalCode}`;
 const encodedAddress = encodeURIComponent(addressLine);
@@ -68,7 +69,9 @@ function AppointmentButton({
 
   return (
     <a
-      href="#stylists"
+      href={business.facebookUrl}
+      target="_blank"
+      rel="noreferrer"
       className={`inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-bold uppercase tracking-[0.16em] transition ${styles[variant]}`}
     >
       {children}
@@ -172,36 +175,33 @@ export default function Home() {
               aria-label="Primary navigation"
               className="hidden items-center gap-6 text-xs font-bold uppercase tracking-[0.16em] text-neutral-700 lg:flex"
             >
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="transition hover:text-[#c91522]"
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item) => {
+                const linkHref = item.linkHref ?? item.href;
+                const isExternal = linkHref.startsWith("http");
+
+                return (
+                  <a
+                    key={item.href}
+                    href={linkHref}
+                    target={isExternal ? "_blank" : undefined}
+                    rel={isExternal ? "noreferrer" : undefined}
+                    className="transition hover:text-[#c91522]"
+                  >
+                    {item.label}
+                  </a>
+                );
+              })}
             </nav>
             <AppointmentButton>Contact</AppointmentButton>
           </div>
-          <nav
-            aria-label="Mobile navigation"
-            className="flex gap-5 overflow-x-auto border-t border-neutral-100 px-4 py-3 text-xs font-bold uppercase tracking-[0.16em] text-neutral-700 lg:hidden"
-          >
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="shrink-0 transition hover:text-[#c91522]"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
+          <MobileSectionNav items={navItems} />
         </header>
 
-        <main id="home">
-          <section className="relative isolate overflow-hidden bg-neutral-950 text-white">
+        <main>
+          <section
+            id="home"
+            className="relative isolate overflow-hidden bg-neutral-950 text-white"
+          >
             <Image
               src={imageAssets.heroBuilding.src}
               alt={imageAssets.heroBuilding.alt}
@@ -658,7 +658,12 @@ export default function Home() {
               >
                 Facebook
               </a>
-              <a href="#stylists" className="hover:text-[#f6c744]">
+              <a
+                href={business.facebookUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-[#f6c744]"
+              >
                 Appointments
               </a>
             </div>

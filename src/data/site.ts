@@ -1,3 +1,11 @@
+const salonFacebookUrl = "https://www.facebook.com/profile.php?id=61589620811520";
+
+export type NavItem = {
+  label: string;
+  href: string;
+  linkHref?: string;
+};
+
 export const business = {
   name: "Salon NB",
   tagline: "Good Folks, Good Vibes, the Best Hair.",
@@ -15,21 +23,21 @@ export const business = {
   phone: "(830) 000-0000",
   phoneHref: "tel:+18300000000",
   facebookLabel: "Facebook",
-  facebookUrl: "https://www.facebook.com/profile.php?id=61589620811520",
+  facebookUrl: salonFacebookUrl,
   email: "hello@salonnewbraunfels.com",
   hours: [
     "By appointment only",
   ],
 };
 
-export const navItems = [
+export const navItems: NavItem[] = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
   { label: "Stylists", href: "#stylists" },
   { label: "Gallery", href: "#gallery" },
   { label: "Bridal", href: "#bridal" },
   { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "#contact", linkHref: salonFacebookUrl },
 ];
 
 export const services = [
@@ -112,7 +120,7 @@ export const sectionCopy = {
   services: {
     eyebrow: "Services",
     title: "Hair that fits your day, your calendar, and your vibe.",
-    body: "Contact Salon NB about New Braunfels hair salon appointments for color, extensions, highlights, smoothing, haircuts, makeup, and bridal styling with a polished but comfortable feel.",
+    body: "Message Salon NB about New Braunfels hair salon appointments for color, extensions, highlights, smoothing, haircuts, makeup, and bridal styling with a polished but comfortable feel.",
     cta: "Contact to Schedule",
   },
   vibe: {
@@ -155,7 +163,7 @@ export const sectionCopy = {
     ],
   },
   contact: {
-    eyebrow: "Contact",
+    eyebrow: "Message Us",
     title: "Ready to plan your next appointment?",
     body:
       "Find Salon NB at {address}. Call, message, get directions, or connect with the salon before your next color, cut, extension, or bridal appointment.",
